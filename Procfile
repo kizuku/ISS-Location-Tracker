@@ -1,2 +1,2 @@
 worker: python ISS-Location.py
-web: html Interface.html
+web: Interface.html
