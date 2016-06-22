@@ -6,4 +6,4 @@ from flask import Flask, request
 app = Flask(__name__)
 
 def hello():
-    return render_template('interface.html', name=name)
+    return render_template('interface.html')
