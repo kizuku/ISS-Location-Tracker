@@ -1,13 +1,12 @@
 import os 
 from flask import Flask
-from flask import url_for, render_template
-import Interface.html
+from flask import request
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 
 @app.route("/")
 def html():
-    return render_template(url_for("static", filename="Interface.html"))
+    return app.send_static_file('Interface.html')
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
