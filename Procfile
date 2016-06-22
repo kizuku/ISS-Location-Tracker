@@ -1,1 +1,2 @@
-web: python ISS-Location.py
+worker: python ISS-Location.py
+web: python Hello.py
