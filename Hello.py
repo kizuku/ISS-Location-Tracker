@@ -4,8 +4,8 @@ from flask import request
 
 app = Flask(__name__, static_url_path='')
 
-@app.route('/Interface/')
-def interface():
+@app.route('/')
+def root():
     return app.send_static_file('Interface.html')
 
 if __name__ == '__main__':
