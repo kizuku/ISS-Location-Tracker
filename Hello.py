@@ -1,11 +1,11 @@
 from flask import render_template
 from flask import Flask, request
 
-app = Flask(__name__, static_url_path='')
+app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return app.send_static_file('welcome.html')
+    return render_template('welcome.html')
 #    return "Hello!"
 
 #@app.route('/interface')
