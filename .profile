@@ -1,1 +1,1 @@
-PATH="$PATH:/c/bootstrap"
+PATH="$PATH:/c/Python27"
