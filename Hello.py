@@ -7,9 +7,10 @@ app = Flask(__name__)
 def hello():
     return "Hello!"
 
-@app.route('/<name>')
-def interface():
-    return render_template('interface.html', name)
+@app.route('/interface')
+@app.route('/interface/<name>')
+def interface(name=None):
+    return render_template('interface.html', name=name)
 
 if __name__ == '__main__':
     app.run(debug=True)
