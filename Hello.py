@@ -5,12 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template('interface.html')
-#    return "Hello!"
+    return "Hello!"
 
-#@app.route('/interface')
-#def interface():
-#    return app.send_static_file('welcome.html')
+@app.route('/interface')
+def interface():
+    return render_template('interface.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
